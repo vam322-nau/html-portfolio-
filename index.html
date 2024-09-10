@@ -1,40 +1,138 @@
 <!DOCTYPE html>
-
-<!-- root element -->
 <html>
-    <!-- head element -->
     <head>
-        <!-- webpage title -->
         <title>
-            Personal Portfolio using HTML Text Formatting Element
+            Enhancing Your Portfolio with Tables, Lists, and Media
         </title>    
     </head>
 
-    <!-- body section -->
     <body>
-        <h1>Viviana Mendoza's First Webpage</h1>
-        <h2>Programmer and Personal Trainer</h2>
-        <h3>Contact Information:</h3>
-            Phone: 520-371-7829 <br>
-            Email: vam322@nau.edu<br>
-            Discord: vivianam_86124<br>
-        
-        
-    <hr>
-        <p>
-            My name is Viviana, I am a thrid year student and my major is Software Emgineering at NAU.
-            I, unfortunately don't have any experience besides the classes I am taking here at nau.
-            I have always been fascinated by how the internent and webstites work. 
-            <b>My goal is to work for Apple 
-            in 10 years time making programs.</b>
+        <!---HEADING TITLE IS UNDECIDED; COME BACK AND CHANGE IT-->
+        <h1>Viviana's Porfolio</h1>
 
+        <nav>
+            <ul>
+                <a href="index.html#Experience-and-Education">
+                    <li>Experience and Education Outline</li>
+                </a>
+                <a href="index.html#skillsets">
+                    <li>Skillsets</li>
+                </a>
+                <a href="index.html#resume">
+                    <li>Resume</li>
+                </a>
+                <a href="index.html#contact">
+                    <li>Contact Information</li>
+                </a>
+
+
+            </ul>
+        </nav>
+    <!---Banner Image-->
+    <img src="./files/IMAGE CS212.jpg" alt="blue background with technologies"
+        height="100"
+        width="500"
+    />
+        
+
+        <section id="Experience-and-Education">
+        <h3>Education and Experience Outline</h3>
+        <table border>
+            <!---table heading-->
+            <!---these are the starters for the title of f the tables, start here-->
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Education</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+
+            <!---table body-->
+            <tbody>
+                <tr>
+                    <td><b>Institution</td>
+                    <td>Northern Arizona University</td>
+                    <td>Microsoft Inc.</td>
+                </tr>
+                <tr>
+                    <td><b>Position</td>
+                    <td>Bachaelor's</td>
+                    <td>Software Development Engineer</td>
+                </tr>
+                <tr>
+                    <td><b>Duration</td>
+                    <td>2022 - 2026</td>
+                    <td>2030 - current</td>
+            </tbody> 
+        </section> 
+
+        </table>
+        <!--- Skillsets section-->
+        <section id="skillset">
+        <h3>Skillsets</h3>
+        <ol>
+            <h4>Soft Skills</h4>
+            <li>Communication</li>
+            <li>Adaptability</li>
+            <li>Time Management</li>
+            <li>Problem-Solving</li>
+        </ol>
+        
+        <ol>
+            <h4>Technologies</h4>
+            <li>Programming Languages</li>
+            <li>Version Control</li>
+            <li>Databases</li>
+            <li>Cloud Platforms</li>
+        </ol>
+
+        <ol>
+            <h4>Frameworks</h4>
+            <li>Web Development</li>
+            <li>Mobile Development</li>
+            <li>Testing</li>
+            <li>CSS</li>
+        </ol>
+
+        </section>
+    <!--Image #2-->
+    <img src="./files/IMAGE2 .jpg" alt="coding background"/
+        height="100"
+        width="500"
+    />
+        
+    <!---Resume--->
+    <section id="resume">
+        <h3>Resume Link</h3>
+
+        <a href="./files/Resume.pdf" downloads="resume-file-VivianaMendoza">
+            Download the resume(PDF)
+        </a>
+
+    </section>
+
+
+    <!--Contact Info -->
+    <section id="contact">
+        <h3>Contact Information</h3>
+
+        <p>
+            Email:
+            <a href="mailto:vam322@nau.edu">
+                vam322@nau.edu
+            </a>
         </p>
-        <h4> Education and Experience</h4>
-        <p>
-            I am currently an NAU student, and I also take extentional classes at a community college.
-            With computer science I don't have much experience, but I have worked in retail for 3 years as a side job. 
-        <p>
-
         
-    </body>
+        <p>
+            Phone: 
+            <a href="callto:5203717829">
+                5203717829
+            </a>
+        </p>
+    </section>
+
+    </body>      
 </html>
+
+
