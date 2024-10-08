@@ -1,138 +1,168 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Enhancing Your Portfolio with Tables, Lists, and Media
-        </title>    
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Enhance Your Portfolio with Bootstrap and Advanced UI Concept</title>
+</head>
+<body>
+    <header class="bg-primary bg-gradient">
+        <h1>Viviana's Portfolio</h1>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">About Viviana</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#summary">Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Information</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <body>
-        <!---HEADING TITLE IS UNDECIDED; COME BACK AND CHANGE IT-->
-        <h1>Viviana's Porfolio</h1>
-
-        <nav>
-            <ul>
-                <a href="index.html#Experience-and-Education">
-                    <li>Experience and Education Outline</li>
-                </a>
-                <a href="index.html#skillsets">
-                    <li>Skillsets</li>
-                </a>
-                <a href="index.html#resume">
-                    <li>Resume</li>
-                </a>
-                <a href="index.html#contact">
-                    <li>Contact Information</li>
-                </a>
-
-
-            </ul>
-        </nav>
-    <!---Banner Image-->
-    <img src="./files/IMAGE CS212.jpg" alt="blue background with technologies"
-        height="100"
-        width="500"
-    />
-        
-
-        <section id="Experience-and-Education">
-        <h3>Education and Experience Outline</h3>
-        <table border>
-            <!---table heading-->
-            <!---these are the starters for the title of f the tables, start here-->
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Education</th>
-                    <th>Experience</th>
-                </tr>
-            </thead>
-
-            <!---table body-->
-            <tbody>
-                <tr>
-                    <td><b>Institution</td>
-                    <td>Northern Arizona University</td>
-                    <td>Microsoft Inc.</td>
-                </tr>
-                <tr>
-                    <td><b>Position</td>
-                    <td>Bachaelor's</td>
-                    <td>Software Development Engineer</td>
-                </tr>
-                <tr>
-                    <td><b>Duration</td>
-                    <td>2022 - 2026</td>
-                    <td>2030 - current</td>
-            </tbody> 
-        </section> 
-
-        </table>
-        <!--- Skillsets section-->
-        <section id="skillset">
-        <h3>Skillsets</h3>
-        <ol>
-            <h4>Soft Skills</h4>
-            <li>Communication</li>
-            <li>Adaptability</li>
-            <li>Time Management</li>
-            <li>Problem-Solving</li>
-        </ol>
-        
-        <ol>
-            <h4>Technologies</h4>
-            <li>Programming Languages</li>
-            <li>Version Control</li>
-            <li>Databases</li>
-            <li>Cloud Platforms</li>
-        </ol>
-
-        <ol>
-            <h4>Frameworks</h4>
-            <li>Web Development</li>
-            <li>Mobile Development</li>
-            <li>Testing</li>
-            <li>CSS</li>
-        </ol>
-
+    <main class="main-container container mt-4">
+        <section id="summary"> 
+            <h2>Summary</h2>
+            <p style="font-family: 'Times New Roman', Times, serif;"> I am a dedicated professional with over 3 years of experience in web programming. 
+                I have skills in many computer languages, content creation, and have helped improve website traffic. 
+                As a programmer, I design, write, and maintain code to build software that solves problems or performs specific tasks.
+                A key part of my role is debugging, testing, and optimizing code to ensure everything runs smoothly. 
+                I am looking to use my knowledge in digital strategy to contribute to a programming team.
+            </p>
+            <a href="#" class="btn btn-primary">Download Resume</a>
         </section>
-    <!--Image #2-->
-    <img src="./files/IMAGE2 .jpg" alt="coding background"/
-        height="100"
-        width="500"
-    />
         
-    <!---Resume--->
-    <section id="resume">
-        <h3>Resume Link</h3>
-
-        <a href="./files/Resume.pdf" downloads="resume-file-VivianaMendoza">
-            Download the resume(PDF)
-        </a>
-
-    </section>
-
-
-    <!--Contact Info -->
-    <section id="contact">
-        <h3>Contact Information</h3>
-
-        <p>
-            Email:
-            <a href="mailto:vam322@nau.edu">
-                vam322@nau.edu
-            </a>
-        </p>
+        <section id="education">
+            <h2>Education</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Institution</th>
+                        <th>Degree</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Northern Arizona University</td>
+                        <td>Bachelor of Science</td>
+                        <td>2018-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft Inc</td>
+                        <td>Certification</td>
+                        <td>2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
         
-        <p>
-            Phone: 
-            <a href="callto:5203717829">
-                5203717829
-            </a>
-        </p>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">CSS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Fitness Tracker</h5>
+                            <p class="card-text">A web application for tracking fitness goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Chatbot</h5>
+                            <p class="card-text">An intelligent chatbot for customer support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Multiplayer Game</h5>
+                            <p class="card-text">A fun multiplayer game for online users.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Alarm System</h5>
+                            <p class="card-text">An IoT solution for smart home security.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>
+                Email: <a href="mailto:vam322@nau.edu">vam322@nau.edu</a>
+            </p>
+            <p>
+                Phone: <a href="callto:5203717829">5203717829</a>
+            </p>
+        </section>
+    </main>
+    
+    <footer class="bg-dark bg-gradient text-white">
+        <p>&copy; 2024 Viviana's Portfolio</p>
+    </footer>
 
-    </body>      
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
-
-
