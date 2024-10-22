@@ -1,11 +1,38 @@
-* {
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ffffff; /* Keeping the light background for readability */
+    margin: 0;
+    padding: 0;
 }
 
+h1, h2 {
+    color: #fff; /* White text for headings */;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333; /* Darker color for section headings */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444; /* Consistent color for paragraph text */
+}
+
+a {
+    color: #007bff; /* Keeping the same blue for links */
+    text-decoration: none;
+}
+
+/* Header */
 header {
     background: linear-gradient(45deg, #6a1b9a, #d81b60);
     color: white;
@@ -13,34 +40,138 @@ header {
     text-align: center;
 }
 
+/* Navbar */
 .navbar {
-    background-color: #a85a93; /* Added missing semicolon */
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Light background for navbar */
 }
 
 .navbar a {
-    color: white; 
+    color: #007bff; /* Blue navbar links */
 }
 
+/* Main Container */
 .main-container {
-    padding-top: 60px; 
+    padding: 20px;
 }
 
-.skill, .project {
-    background-color: #eee;
+/* Summary Section */
+#summary {
+    background-color: #e9ecef; /* Subtle gray background for summary */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#summary .btn-primary {
+    background-color: #007bff; /* Primary blue for buttons */
+    border: none;
+}
+
+#summary .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Education Section */
+#education {
+    background-color: #f1f1f1; /* Light gray background for education */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#education table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#education th, #education td {
     padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Removed trailing slash */
-    margin-bottom: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Light border for table */
 }
 
+/* Skills Section */
+#skills {
+    background-color: #e9ecef; /* Same light gray for skills */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    background-color: #007bff; /* Blue background for skill tags */
+    color: #fff; /* White text for skills */
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    width: fit-content;
+}
+
+#skill-form {
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #f1f1f1; /* Light gray background for projects */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#projects .card {
+    border: none;
+    background-color: #e2e3e5; /* Light gray for project cards */
+    border-radius: 8px;
+}
+
+#projects .card-title {
+    font-weight: bold;
+    color: #333; /* Darker text for project titles */
+}
+
+#projects .card-text {
+    color: #555; /* Slightly lighter text for descriptions */
+}
+
+#projects p {
+    font-size: 14px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e9ecef; /* Same gray as skills/summary */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
 footer {
-    background: linear-gradient(45deg, #333, #555);
-    color: white;
+    background-color: #333; /* Dark footer */
     padding: 10px;
     text-align: center;
+    color: #fff; /* White text in footer */
 }
 
 footer p {
     margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    #skills ul li {
+        width: 100%;
+    }
 }

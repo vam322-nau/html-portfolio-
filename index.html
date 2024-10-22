@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css"> 
     <title>Viviana's Portfolio</title>
 </head>
 <body>
@@ -28,7 +28,7 @@
     </nav>
 
     <main class="main-container container mt-4">
-        <section id="greeting" class="mt-4"></section> <!-- Greeting section added -->
+        <section id="greeting" class="mt-4"></section>
         
         <section id="summary">
             <h2>Summary</h2>
@@ -37,50 +37,56 @@
                 I have skills in many computer languages and content creation, helping improve website traffic.
             </p>
             <a href="#" class="btn btn-primary">Download Resume</a>
+            <p>Resume Downloads: <span id="download-count">0</span></p> <!-- Resume download counter -->
         </section>
 
         <section id="education">
             <h2>Education</h2>
-            <table class="table">
+            <table class="table" id="education-table">
                 <thead>
                     <tr><th>Institution</th><th>Degree</th><th>Year</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Northern Arizona University</td><td>Bachelor of Science</td><td>2018-2022</td></tr>
-                    <tr><td>Microsoft Inc</td><td>Certification</td><td>2024</td></tr>
+            
                 </tbody>
             </table>
         </section>
 
+        
         <section id="skills">
             <h2>Skills</h2>
             <div class="row">
-                <div class="col-md-3"><div class="card mb-4"><div class="card-body"><h5 class="card-title">HTML</h5></div></div></div>
-                <div class="col-md-3"><div class="card mb-4"><div class="card-body"><h5 class="card-title">CSS</h5></div></div></div>
-                <div class="col-md-3"><div class="card mb-4"><div class="card-body"><h5 class="card-title">JavaScript</h5></div></div></div>
-                <div class="col-md-3"><div class="card mb-4"><div class="card-body"><h5 class="card-title">Python</h5></div></div></div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Ongoing Project</h5>
-                            <p class="card-text">An Expense Tracking App.</p>
-                            <p>Deadline: December 31, 2024</p>
+                <div class="col-md-12">
+                    <form id="skill-form">
+                        <div class="form-group">
+                            <label for="skill-input">Add a Skill:</label>
+                            <input type="text" id="skill-input" class="form-control" placeholder="Enter a skill">
                         </div>
-                    </div>
+                        <button type="button" class="btn btn-success" onclick="addSkill()">Add Skill</button>
+                    </form>
+                    <ul id="skill-list">
+                        <!-- Existing skills listed here -->
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
+        <!-- Step 2: Projects section updated with a dynamic project list -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div id="projects-list">
+            </div>          
+        </section>
+        
+
         <section id="contact">
             <h2>Contact Information</h2>
             <p>Email: <a href="mailto:vam322@nau.edu">vam322@nau.edu</a></p>
-            <p>Phone: <a href="tel:+15203717829">5203717829</a></p>
+            <p>Phone: <a href="tel:+15203717829">520-371-7829</a></p>
         </section>
     </main>
 
@@ -88,7 +94,6 @@
         <p>&copy; 2024 Viviana's Portfolio</p>
     </footer>
 
-    <!-- Linking the JavaScript file -->
     <script src="app.js"></script>
 </body>
 </html>
