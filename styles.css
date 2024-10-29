@@ -1,13 +1,14 @@
-/* General Styles */
+/* General body styles */
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #ffffff; /* Keeping the light background for readability */
+    background-color: #ffffff; 
     margin: 0;
     padding: 0;
 }
 
+/* Heading styles */
 h1, h2 {
-    color: #fff; /* White text for headings */;
+    color: #fff;
 }
 
 h1 {
@@ -18,21 +19,23 @@ h1 {
 
 h2 {
     margin-top: 20px;
-    color: #333; /* Darker color for section headings */
+    color: #333; 
 }
 
+/* Paragraph styles */
 p {
     font-size: 16px;
     line-height: 1.6;
-    color: #444; /* Consistent color for paragraph text */
+    color: #444; 
 }
 
+/* Link styles */
 a {
-    color: #007bff; /* Keeping the same blue for links */
+    color: #007bff; 
     text-decoration: none;
 }
 
-/* Header */
+/* Header styles */
 header {
     background: linear-gradient(45deg, #6a1b9a, #d81b60);
     color: white;
@@ -40,44 +43,57 @@ header {
     text-align: center;
 }
 
-/* Navbar */
+/* Navbar styles */
 .navbar {
     margin-bottom: 20px;
-    background-color: #f8f9fa; /* Light background for navbar */
+    background-color: #f8f9fa;
+    border-radius: 8px;
 }
 
 .navbar a {
-    color: #007bff; /* Blue navbar links */
+    color: #007bff;
+    transition: color 0.3s;
 }
 
-/* Main Container */
+.navbar a:hover {
+    color: #0056b3;
+}
+
+/* Main container styles */
 .main-container {
     padding: 20px;
 }
 
-/* Summary Section */
+/* Summary section styles */
 #summary {
-    background-color: #e9ecef; /* Subtle gray background for summary */
+    background-color: #e9ecef; 
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
+    transition: background-color 0.5s;
 }
 
 #summary .btn-primary {
-    background-color: #007bff; /* Primary blue for buttons */
+    background-color: #007bff; 
     border: none;
+    transition: background-color 0.3s;
 }
 
 #summary .btn-primary:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
-/* Education Section */
+/* Education section styles */
 #education {
-    background-color: #f1f1f1; /* Light gray background for education */
+    background-color: #f1f1f1; 
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
+    transition: box-shadow 0.3s;
+}
+
+#education:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #education table {
@@ -88,15 +104,16 @@ header {
 #education th, #education td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ddd; /* Light border for table */
+    border-bottom: 1px solid #ddd;
 }
 
-/* Skills Section */
+/* Skills section styles */
 #skills {
-    background-color: #e9ecef; /* Same light gray for skills */
+    background-color: #e9ecef; 
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
+    transition: background-color 0.5s;
 }
 
 #skills ul {
@@ -105,73 +122,114 @@ header {
 }
 
 #skills ul li {
-    background-color: #007bff; /* Blue background for skill tags */
-    color: #fff; /* White text for skills */
+    background-color: #588dc5; 
+    color: #fff; 
     margin-bottom: 5px;
     padding: 8px;
     border-radius: 4px;
-    text-align: center;
-    width: fit-content;
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Set width to 100% */
+    position: relative;
+    transition: transform 0.3s;
 }
 
+#skills ul li:hover {
+    transform: scale(1.05);
+}
+
+/* Button styles inside skill list items */
+#skills ul li button {
+    position: absolute;
+    right: 10px; /* Change position to avoid overlap */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Skill form styles */
 #skill-form {
     margin-bottom: 20px;
 }
 
-/* Projects Section */
+/* Projects section styles */
 #projects {
-    background-color: #f1f1f1; /* Light gray background for projects */
+    background-color: #f1f1f1; 
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
+    transition: box-shadow 0.3s;
 }
 
 #projects .card {
     border: none;
-    background-color: #e2e3e5; /* Light gray for project cards */
+    background-color: #e2e3e5; 
     border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+#projects .card:hover {
+    transform: scale(1.02);
 }
 
 #projects .card-title {
     font-weight: bold;
-    color: #333; /* Darker text for project titles */
+    color: #333; 
 }
 
 #projects .card-text {
-    color: #555; /* Slightly lighter text for descriptions */
+    color: #555; 
 }
 
 #projects p {
     font-size: 14px;
 }
 
-/* Contact Section */
+/* Contact section styles */
 #contact {
-    background-color: #e9ecef; /* Same gray as skills/summary */
+    background-color: #e9ecef; 
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
+    transition: background-color 0.5s;
 }
 
-/* Footer */
+/* Footer styles */
 footer {
-    background-color: #333; /* Dark footer */
+    background-color: #333; 
     padding: 10px;
     text-align: center;
-    color: #fff; /* White text in footer */
+    color: #fff; 
 }
 
 footer p {
     margin: 0;
 }
 
-/* Responsive Design */
+/* Sort deadline button styles */
+#sort-deadline {
+    background-color: #6a1b9a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+#sort-deadline:hover {
+    background-color: #4e1066;
+}
+
+/* Media query for responsive styles */
 @media (max-width: 768px) {
     .navbar-collapse {
         text-align: center;
     }
 
     #skills ul li {
+        width: 100%; /* Ensure full width on small screens */
+    }
+
+    #sort-deadline {
         width: 100%;
+        margin-top: 10px;
     }
 }
